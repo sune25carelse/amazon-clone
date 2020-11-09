@@ -12,7 +12,7 @@ const firebaseConfig = {
     measurementId: "G-KF71SEG874"
   };
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();
 const auth = firebase.auth();

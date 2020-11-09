@@ -30,7 +30,9 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                     <span role="img" aria-label="Star">🌟</span>
                 ))}
             </div>
-            <button onClick={removeFromBasket}>Remove from Basket</button>
+            {!hideButton && (
+                <button onClick={removeFromBasket}>Remove from Basket</button>
+            )}
         </div>
 
     </div>
